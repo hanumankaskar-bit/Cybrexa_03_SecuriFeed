@@ -1,0 +1,42 @@
+:root {
+    --bg-dark: #060b13;
+    --card-bg: #0d1527;
+    --cyan: #00f0ff;
+    --low-green: #00ff66;
+    --med-yellow: #ffcc00;
+    --high-red: #ff3333;
+    --text-white: #ffffff;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid var(--cyan);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+h1 { color: var(--cyan); margin: 0; }
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hidden { display: none !important; }
+
+/* Dynamic Badge Colors */
+.badge { padding: 10px; border-radius: 4px; font-weight: bold; display: inline-block; margin-bottom: 15px;}
+.risk-low { background-color: var(--low-green); color: black; }
+.risk-med { background-color: var(--med-yellow); color: black; }
+.risk-high { background-color: var(--high-red); color: white; }
