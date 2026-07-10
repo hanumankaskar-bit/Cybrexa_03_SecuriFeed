@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecuriFeed | PhishDetect</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+<header>
+
+    <div class="logo">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h2>SecuriFeed</h2>
+    </div>
+
+    <nav>
+
+        <a href="#home">Home</a>
+        <a href="#analyzer">Analyzer</a>
+        <a href="#news">News</a>
+        <a href="#about">About</a>
+
+    </nav>
+
+</header>
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>PhishDetect</h1>
+
+        <p>
+            Detect phishing URLs using JavaScript, Regular Expressions,
+            HTTPS validation and cybersecurity best practices.
+        </p>
+
+        <a href="#analyzer" class="btn">
+            Analyze URL
+        </a>
+
+    </div>
+
+</section>
+
+<section id="analyzer" class="analyzer">
+
+<h2>Phishing URL Analyzer</h2>
+
+<div class="analyzer-box">
+
+<input
+type="text"
+id="urlInput"
+placeholder="https://example.com">
+
+<button onclick="analyzeURL()">
+
+Analyze
+
+</button>
+
+</div>
+
+<div class="result-card">
+
+<h3>Analysis Report</h3>
+
+<p>
+
+<strong>Risk Score:</strong>
+
+<span id="riskScore">
+
+0%
+
+</span>
+
+</p>
+
+<p>
+
+<strong>HTTPS:</strong>
+
+<span id="httpsStatus">
+
+-
+
+</span>
+
+</p>
+
+<p>
+
+<strong>IP Address:</strong>
+
+<span id="ipStatus">
+
+-
+
+</span>
+
+</p>
+
+<p>
+
+<strong>Typosquatting:</strong>
+
+<span id="typoStatus">
+
+-
+
+</span>
+
+</p>
+
+<p>
+
+<strong>URL Length:</strong>
+
+<span id="lengthStatus">
+
+-
+
+</span>
+
+</p>
+
+<p>
+
+<strong>Shortener:</strong>
+
+<span id="shortStatus">
+
+-
+
+</span>
+
+</p>
+
+<p>
+
+<strong>Recommendation:</strong>
+
+<span id="recommendation">
+
+Waiting for analysis...
+
+</span>
+
+</p>
+
+</div>
+
+</section>
+
+<section id="news" class="news">
+
+<h2>Cybersecurity News</h2>
+
+<div id="newsContainer" class="news-grid">
+
+</div>
+
+</section>
+
+<section id="about" class="about">
+
+<h2>About Project</h2>
+
+<p>
+
+SecuriFeed is an educational phishing detection web
+application developed for the Cybrexa Cybersecurity
+Internship Program.
+
+The analyzer checks URLs against common phishing
+patterns using JavaScript and Regex.
+
+</p>
+
+<div class="features">
+
+<div class="card">
+
+<i class="fa-solid fa-lock"></i>
+
+<h3>HTTPS Check</h3>
+
+<p>
+
+Verify secure websites.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-triangle-exclamation"></i>
+
+<h3>Phishing Detection</h3>
+
+<p>
+
+Detect suspicious patterns.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-newspaper"></i>
+
+<h3>Cyber News</h3>
+
+<p>
+
+Latest security updates.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Hanuman Kaskar |
+Cybrexa Cybersecurity Internship Project
+
+</p>
+
+</footer>
+
+<script src="analyzer.js"></script>
+
+<script src="news.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
