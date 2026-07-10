@@ -1,0 +1,12 @@
+[
+  {
+    "title": "New Typosquatting Wave Targets Online Banking Applications",
+    "severity": "High",
+    "summary": "Attackers are registering lookalike domains substituting characters to deceive remote workforces."
+  },
+  {
+    "title": "Rise of Non-SSL HTTP Login Pages in Malicious Ad Campains",
+    "severity": "Medium",
+    "summary": "Recent threat feeds display a spike in unencrypted fake verification endpoints."
+  }
+]
